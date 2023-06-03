@@ -1,1 +1,1 @@
-# Comprehensive Sftware Egineering Pogram in SoftUni
+# Comprehensive Software Egineering Pogram in SoftUni
