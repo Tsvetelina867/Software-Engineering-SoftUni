@@ -1,1 +1,1 @@
-# Comprehensive Software Egineering Pogram in SoftUni
+# Comprehensive Software Engineering Program in SoftUni
