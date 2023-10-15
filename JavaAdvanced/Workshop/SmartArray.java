@@ -2,16 +2,16 @@ package Workshop;
 
 import java.util.function.Consumer;
 
-public class SmartArray {
-    private int[] data;
+public class SmartArray<T> {
+    private  Object[] data;
     private int index;
 
     public SmartArray() {
-        this.data = new int[2];
+        this.data = new Object[2];
         this.index = 0;
     }
 
-    public void add(int element) {
+    public void add(T element) {
         if (index == data.length) {
             data = resize(data.length * 2);
         }
@@ -20,9 +20,9 @@ public class SmartArray {
         index++;
     }
 
-    private int[] resize(int newSize) {
+    private Object[] resize(int newSize) {
 
-        int[] newData = new int[newSize];
+        Object[] newData = new Object[newSize];
 
         System.arraycopy(data, 0, newData, 0, index);
 
@@ -33,11 +33,12 @@ public class SmartArray {
         return index;
     }
 
-    public int get(int index) {
-        return data[index];
+    @SuppressWarnings("unchecked")
+    public T get(int index) {
+        return (T)data[index];
     }
 
-    public boolean contains(int element) {
+    public boolean contains(T element) {
         for (int i = 0; i < index; i++) {
             if (data[i] == element) {
                 return true;
@@ -46,13 +47,13 @@ public class SmartArray {
         return false;
     }
 
-    public int remove(int index) {
-        int element = data[index];
+    public T remove(int index) {
+        T element = get(index);
 
         for (int i = index; i < this.index - 1; i++) {
             data[i] = data[i + 1];
         }
-        data[this.index - 1] = 0;
+        data[this.index - 1] = null;
 
         this.index--;
 
@@ -63,9 +64,9 @@ public class SmartArray {
         return element;
     }
 
-    public void add(int index, int element) {
+    public void add(int index, T element) {
 
-        int lastElement = data[this.index - 1];
+        T lastElement = get(this.index - 1);
 
         for (int i = this.index - 1; i > index; i--) {
             data[i] = data[i - 1];
@@ -76,9 +77,9 @@ public class SmartArray {
         add(lastElement);
     }
 
-    public void forEach(Consumer<Integer> consumer) {
+    public void forEach(Consumer<T> consumer) {
         for (int i = 0; i < index; i++) {
-            consumer.accept(data[i]);
+            consumer.accept(get(i));
         }
     }
 
