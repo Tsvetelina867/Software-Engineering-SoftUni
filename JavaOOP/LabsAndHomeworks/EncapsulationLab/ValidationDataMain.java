@@ -1,4 +1,4 @@
-package Encapsulation;
+package EncapsulationLab;
 
 import java.io.BufferedReader;
 import java.io.IOException;

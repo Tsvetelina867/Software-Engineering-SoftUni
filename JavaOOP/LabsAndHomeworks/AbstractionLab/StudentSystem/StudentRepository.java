@@ -1,4 +1,4 @@
-package Abstraction.StudentSystem;
+package AbstractionLab.StudentSystem;
 
 import java.util.HashMap;
 import java.util.Map;

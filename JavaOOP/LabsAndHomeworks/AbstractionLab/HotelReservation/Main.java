@@ -1,6 +1,4 @@
-package Abstraction.HotelReservation;
-
-import Abstraction.HotelReservation.DiscountType;
+package AbstractionLab.HotelReservation;
 
 import java.util.Scanner;
 

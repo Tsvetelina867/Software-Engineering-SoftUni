@@ -1,4 +1,4 @@
-package Encapsulation;
+package EncapsulationLab;
 
 public class Person {
     private String firstName;

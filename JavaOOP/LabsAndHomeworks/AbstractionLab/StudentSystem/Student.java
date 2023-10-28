@@ -1,4 +1,4 @@
-package Abstraction.StudentSystem;
+package AbstractionLab.StudentSystem;
 
 public class Student {
     private static final double EXCELLENT_GRADE_LOWER_BOUND = 5.00;

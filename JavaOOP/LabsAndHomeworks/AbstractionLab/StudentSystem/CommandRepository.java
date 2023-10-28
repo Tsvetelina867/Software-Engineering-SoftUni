@@ -1,4 +1,4 @@
-package Abstraction.StudentSystem;
+package AbstractionLab.StudentSystem;
 
 import java.util.Map;
 import java.util.function.Function;

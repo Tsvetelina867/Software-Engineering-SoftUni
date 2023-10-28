@@ -1,4 +1,4 @@
-package Abstraction.PointInRectangle;
+package AbstractionLab.PointInRectangle;
 
 public class Point {
     private int x;

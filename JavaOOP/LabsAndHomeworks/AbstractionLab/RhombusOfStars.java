@@ -1,4 +1,4 @@
-package Abstraction;
+package AbstractionLab;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package Abstraction.PointInRectangle;
-
-import Abstraction.PointInRectangle.Point;
+package AbstractionLab.PointInRectangle;
 
 public class Rectangle {
     private Point bottomLeft;

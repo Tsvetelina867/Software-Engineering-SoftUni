@@ -1,4 +1,4 @@
-package Abstraction.HotelReservation;
+package AbstractionLab.HotelReservation;
 
 public enum Season {
     SPRING(2),

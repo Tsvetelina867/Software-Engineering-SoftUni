@@ -1,4 +1,4 @@
-package Abstraction.StudentSystem;
+package AbstractionLab.StudentSystem;
 
 public class StudentSystem {
     private StudentRepository studentRepository;

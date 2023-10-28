@@ -1,6 +1,4 @@
-package Abstraction.HotelReservation;
-
-import Abstraction.HotelReservation.DiscountType;
+package AbstractionLab.HotelReservation;
 
 public class PriceCalculator {
     private final double pricePerDay;
